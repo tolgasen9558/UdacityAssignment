@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="6dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardElevation="4dp"
+    card_view:cardCornerRadius="3dp">
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        tools:ignore="RtlCompat" >
+
+        <TextView
+            android:id="@+id/cardview_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/placeholder_name"
+            app:layout_constraintStart_toStartOf="@+id/cardview_avatar_IV"
+            app:layout_constraintTop_toBottomOf="@+id/cardview_avatar_IV"
+            />
+
+        <TextView
+            android:id="@+id/cardview_email_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/placeholder_email"
+            app:layout_constraintStart_toStartOf="@+id/cardview_name_tv"
+            app:layout_constraintTop_toBottomOf="@+id/cardview_name_tv" />
+
+        <TextView
+            android:id="@+id/cardview_companyname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/placeholder_company"
+            app:layout_constraintStart_toStartOf="@+id/cardview_email_tv"
+            app:layout_constraintTop_toBottomOf="@+id/cardview_email_tv" />
+
+        <TextView
+            android:id="@+id/cardview_startdate_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/placeholder_date"
+            app:layout_constraintBottom_toBottomOf="@+id/cardview_companyname_tv"
+            app:layout_constraintStart_toEndOf="@+id/cardview_companyname_tv"
+            app:layout_constraintTop_toTopOf="@+id/cardview_companyname_tv" />
+
+        <TextView
+            android:id="@+id/cardview_bio_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/placeholder_long_text"
+            app:layout_constraintEnd_toEndOf="@+id/cardview_avatar_IV"
+            app:layout_constraintStart_toStartOf="@+id/cardview_avatar_IV"
+            app:layout_constraintTop_toBottomOf="@+id/cardview_companyname_tv" />
+
+        <ImageView
+            android:id="@+id/cardview_avatar_IV"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@android:drawable/sym_def_app_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

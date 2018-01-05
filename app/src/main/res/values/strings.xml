@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UdacityTest</string>
+    <string name="placeholder_name">John Doe</string>
+    <string name="placeholder_email">johndoe@gmail.com</string>
+    <string name="placeholder_company">Udacity</string>
+    <string name="placeholder_date">1/1/2018</string>
+    <string name="placeholder_long_text">lorem ipsum dolor sit amet</string>
+</resources>
